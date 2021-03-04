@@ -194,6 +194,14 @@ namespace cv03_bpc_oop
             return separatedWords;
         }
 
+        public bool IsInfected()
+        {
+            if (text.ToLower().Contains("covid") ||
+                text.ToLower().Contains("covid-19") ||
+                text.ToLower().Contains("sars-cov-2")) return true;
+            return false;
+        }
+
         public StringStatistics(string text)
         {
             this.text = text;
