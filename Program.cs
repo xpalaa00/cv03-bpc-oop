@@ -62,6 +62,14 @@ namespace cv03_bpc_oop
             }
             Console.WriteLine();
 
+            Console.WriteLine("Text je nakažen: {0}", stat.IsInfected());
+            testingText += " covid";
+            stat = new StringStatistics(testingText);
+            Console.WriteLine();
+            Console.WriteLine("{0}", testingText);
+            Console.WriteLine();
+            Console.WriteLine("Text je nakažen: {0}", stat.IsInfected());
+
             Console.ReadLine();
         }
     }
